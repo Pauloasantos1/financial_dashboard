@@ -1,0 +1,28 @@
+{
+  "name": "financial_dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "start:frontend": "cd frontend && npm run dev",
+  "start:electron": "electron electron/main.cjs",
+  "start:backend": "cd backend && ./venv/bin/python -m uvicorn main:app --reload --host localhost --port 8000",
+  "start:all": "concurrently -k -n BACKEND,FRONTEND,ELECTRON \"npm run start:backend\" \"npm run start:frontend\" \"npm run start:electron\"",
+  "start": "concurrently -k -n BACKEND,FRONTEND,ELECTRON \"npm run start:backend\" \"npm run start:frontend\" \"npm run start:electron\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pauloasantos1/financial_dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pauloasantos1/financial_dashboard/issues"
+  },
+  "homepage": "https://github.com/Pauloasantos1/financial_dashboard#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "electron": "^37.3.1"
+  }
+}
