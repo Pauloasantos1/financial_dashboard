@@ -1,3 +1,7 @@
+# AI Tools Used 
+The purpose of this is to explore the Codex tool from OpenAI and to explore how AI agents can help develop products efficiently
+while also learning the in's and out's of this new age of software development.
+
 # Financial Dashboard
 
 A unified investment dashboard built with React + FastAPI (+ Electron wrapper) to track assets in one place.
